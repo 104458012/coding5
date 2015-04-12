@@ -16,9 +16,11 @@ public class MainDBCon{
     try{
       DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
 
-      Connection conn = DriverManager.getConnection ("jdbc:oracle:thin:@127.0.0.1:1521:dbname","user","passwd");
+      Connection conn = DriverManager.getConnection 
+                        ("jdbc:oracle:thin:@127.0.0.1:1521:dbname","user","passwd");
 
-      Statement stmt=conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+      Statement stmt= conn.createStatement
+                      (ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 
       sql = "SELECT VALUE FROM TESTDB WHERE ROWNUM < 3"; 
 
