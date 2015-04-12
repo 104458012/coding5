@@ -1,7 +1,7 @@
 /*
 * Date: 2015-04-12
 * Authore: Coding5
-* Purpose: Demo coding5 java main program
+* Purpose: Demo coding5 java main function program
 * Web: http://www.coding5.com
 */
 
