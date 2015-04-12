@@ -2,7 +2,7 @@
 * Date: 2015-04-12
 * Authore: Coding5
 * Purpose: Demo java program use JDBC connect oracle DB 
-* Web: http://www.coding5.com
+* Websit: http://www.coding5.com
 */
 
 import java.sql.*;
