@@ -10,11 +10,11 @@ begin
     
   db.getConn
 
-  sSql = "SELECT value FROM table"
+  sSql = "SELECT codeA FROM coding5"
 
   rs = db.runQuery(sSql) 
   rs.each_hash do |row|
-    puts row['value']
+    puts row['codeA']
   end
 
 rescue Mysql::Error => e
