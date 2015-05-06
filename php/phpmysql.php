@@ -11,17 +11,16 @@ $dbuser = 'root';
 $dbpass = 'p123';
 $dbname = 'DBNAME';
 
-$conn = mysql_connect($dbhost, $dbuser, $dbpass) ;
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 mysql_query("SET NAMES 'UTF8'");
 mysql_select_db($dbname);
 
 $sql = "select codeA from coding5 "; 
-$result = mysql_query($sql) ; /* 執行SQL */
+$result = mysql_query($sql); 
 
-/* while 迴圈撈取資料 */
 while($row = mysql_fetch_array($result)){
-  echo $row['transno']."&lt;br&gt;";
+  echo $row['codeA']."<br>";
 }
 
 mysql_close($conn);
