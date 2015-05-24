@@ -1,3 +1,8 @@
+// Date: 2015-05-24
+// Authore: Coding5
+// Purpose: node.js 連接MySQL 
+// Websit: http://www.coding5.com/works?transno=1000000026
+
 var mysql = require('mysql');
 
 var db = mysql.createConnection({
