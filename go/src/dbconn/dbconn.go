@@ -1,9 +1,14 @@
+// Date: 2015-06-13
+// Authore: Coding5
+// Purpose: 資料庫連線 
+// Websit: http://www.coding5.com/works?transno=1000000032
+
 package dbconn 
 
 import "database/sql"
 import _ "github.com/go-sql-driver/mysql"
 
-var dbinfo string = "mysql:echoo710426@tcp(127.0.0.1:3306)/LETO"
+var dbinfo string = "username:pwd123@tcp(127.0.0.1:3306)/DBNAME"
 
 func GetQuery(stmt string) []string {
 
