@@ -3,7 +3,7 @@
 # Purpose: Ruby 建立DB update 操作 
 # Websit: http://www.coding5.com/works?transno=1000000013
 
-require './dbconn.rb'
+require './dbconncrud.rb'
 
 begin
   db = DBConn.new
